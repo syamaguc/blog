@@ -1,1 +1,1 @@
-# blog
+# syamaguc's blog

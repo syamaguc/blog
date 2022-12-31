@@ -1,0 +1,46 @@
+{
+  "title": "Blog by syamaguc",
+  "url": "",
+  "subtitle": "Subtitle",
+  "copyright": "© Nullius in verba.",
+  "googleAnalyticsId": "",
+  "disqusShortname": "",
+  "postsLimit": 4,
+  "pathPrefix": "/",
+  "menu": [
+    {
+      "label": "Articles",
+      "path": "/"
+    },
+    {
+      "label": "About me",
+      "path": "/pages/about"
+    },
+    {
+      "label": "Contact me",
+      "path": "/pages/contacts"
+    }
+  ],
+  "author": {
+    "name": "syamaguc",
+    "photo": "/icon.jpg",
+    "bio": "だいじょぶます。がんばるます。",
+    "contacts": {
+      "rss": "",
+      "email": "",
+      "github": "syamaguc",
+      "facebook": "#",
+      "telegram": "#",
+      "twitter": "syamaguc",
+      "linkedin": "#",
+      "instagram": "#",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "",
+      "youtube": "",
+      "codepen": "",
+      "soundcloud": ""
+    }
+  }
+}
