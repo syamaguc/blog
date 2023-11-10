@@ -3,9 +3,9 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://syamaguc.dev", // replace this with your deployed domain
   author: "syamaguc",
-  desc: "The appearance of a child, the intellect of a child. Miracle cute engineer & data scientist.",
+  desc: "The appearance of a child, the intellect of a child. Miracle cute programmer & data scientist.",
   title: "APTX4869",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "dalle3-og.png",
   lightAndDarkMode: true,
   postPerPage: 5,
 };
@@ -22,31 +22,31 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/syamaguc",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
   {
     name: "GitLab",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://gitlab.com/syamaguc",
     linkTitle: `${SITE.title} on GitLab`,
     active: true,
   },
   {
     name: "Reddit",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.reddit.com/user/syamaguc",
     linkTitle: `${SITE.title} on Reddit`,
     active: true,
   },
   {
     name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://twitter.com/syamaguc",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
   {
     name: "Pinterest",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.pinterest.jp/syamaguc",
     linkTitle: `${SITE.title} on Pinterest`,
     active: true,
   },
