@@ -8,7 +8,7 @@ draft: false
 tags:
   - dev
   - linux
-description: Linuxについてのtips & memo, 随時更新
+description: 随時更新 | Linux(主にArch Linux)についてのtips & memo
 ---
 
 <div align="center">
@@ -17,7 +17,33 @@ description: Linuxについてのtips & memo, 随時更新
   </a>
 </div>
 
-### GPU関連
+## Table of Contents
+
+## 便利tips
+
+### USB
+
+- [archlinux wiki - USB Storage Device](https://wiki.archlinux.jp/index.php/USB_%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9)
+
+`lsblk -f | grep "sd[a-z]"` とかでデバイスの`uuid`を確認
+
+```bash
+#!/bin/bash
+
+sudo mkdir -p /mnt/usb
+
+if [ "$1" == "mount" ]; then
+	sudo mount /dev/disk/by-uuid/"$2" /mnt/usb -o umask=000
+fi
+
+if [ "$1" == "remove" ]; then
+	sudo umount /mnt/usb
+fi
+```
+
+## 設定関連
+
+### GPU
 
 ディスプレイマネージャーを変えたり、ドライバーをアップデートするとたまに問題が起きる。
 とりあえず、これ読めば大抵は解決する。

@@ -8,24 +8,26 @@ draft: false
 tags:
   - dev
   - vim
-description: vimをついてのtips & memo, 随時更新
+description: 随時更新 | vimの設定, tips, plugin等の変遷ついてlog
 ---
+
+## Table of Contents
 
 ## 2023
 
-### lazyvim
+### lazy.nvim
 
 きっかけは`reddit`のスレッド, [「lazy vs packer」](https://www.reddit.com/r/neovim/comments/11d1wjm/lazy_vs_packer/)
 
 正直自宅のデスクトップで使っている分には、起動速度とかプラグインの重さはそんなに気にならないのだけど、
-Thinkpadくらいのスペックだともっさり感じることは多いから、変えて良かったかなと思う。
-また、同時にLazyvimというフレームワークも試し中。
+`Thinkpad`くらいのスペックだともっさり感じることは多いから、変えて良かったかなと思う。
+また、同時に`Lazyvim`というフレームワークも試し中。
 設定がデフォルトで自分が必要な機能の大部分を網羅出来るのも良い。
 
 ### skkeleton
 
 日本語入力をskkに統一するため、skkeletonを導入。
-これまでIMEを切替えるために、<Ctrl + Space>と<ESC>をひたすら叩いてきたので、そのクセが抜けるまで時間がかかりそう。
+これまでIMEを切替えるために、`<Ctrl + Space>`と`<ESC>`をひたすら叩いてきたので、そのクセが抜けるまで時間がかかりそう。
 
 lazyvimを採用
 
@@ -33,8 +35,16 @@ lazyvimを採用
 
 ### neovim
 
-- vim -> neovimに移行、同時に設定ファイルを`lua`に移行
+- `vim` -> `neovim`
+
+に移行、同時に設定ファイルを`lua`に移行
 
 ## 2019
 
-vimとの出会い
+### vim
+
+`vim`と出会う
+
+### leader key
+
+`<Space>`をLeaderに設定、理由は英字キーボードだと最も叩きやすいから。

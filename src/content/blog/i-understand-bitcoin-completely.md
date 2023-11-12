@@ -14,8 +14,6 @@ description: ビットコイン完全に理解した
 
 > If you don't beliebe it or don't get it, I don't have the time to try to convince you, sorry.
 
-> あなたがビットコインを信じないか、理解しないならば、私にはあなたを説得する時間はありません。ごめんなさい。
-
 とサトシナカモトが言ったとか、言ってないとか。
 
 日本だと未だに、
