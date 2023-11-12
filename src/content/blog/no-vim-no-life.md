@@ -13,6 +13,26 @@ description: 随時更新 | vimの設定, tips, plugin等の変遷ついてlog
 
 ## Table of Contents
 
+## Overview
+
+### Edit
+
+| key            | action     | plugin | mode |
+| -------------- | ---------- | ------ | ---- |
+| leader \<ESC\> | smart_quit | myfunc | n    |
+
+### Move in file
+
+| key  | action | plugin | mode |
+| ---- | ------ | ------ | ---- |
+| hjkl |        |        | n    |
+
+### Move window, buffer
+
+| key       | action           | plugin    | mode |
+| --------- | ---------------- | --------- | ---- |
+| leader ff | find files (cwd) | telescope | n    |
+
 ## 2023
 
 ### lazy.nvim
@@ -38,6 +58,30 @@ lazyvimを採用
 - `vim` -> `neovim`
 
 に移行、同時に設定ファイルを`lua`に移行
+
+### smart_quit
+
+```lua
+--- smart quit
+local smart_quit = function()
+  local bufnr = vim.api.nvim_get_current_buf()
+  local modified = vim.api.nvim_buf_get_option(bufnr, "modified")
+  if modified then
+    vim.ui.input({
+      prompt = "You have unsaved changes.(w/q) ",
+    }, function(input)
+      if input == "w" then
+        vim.cmd("w")
+        vim.cmd("q")
+      elseif input == "q" then
+        vim.cmd("q!")
+      end
+    end)
+  else
+    vim.cmd("q!")
+  end
+end
+```
 
 ## 2019
 
