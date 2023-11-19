@@ -13,9 +13,11 @@ description: 随時更新 | vimの設定, tips, plugin等の変遷ついてlog
 
 ## Table of Contents
 
-## 2023
+## General
 
-### lazy.nvim
+### Plugin Manager
+
+#### lazy.nvim
 
 きっかけは`reddit`のスレッド, [「lazy vs packer」](https://www.reddit.com/r/neovim/comments/11d1wjm/lazy_vs_packer/)
 
@@ -24,21 +26,34 @@ description: 随時更新 | vimの設定, tips, plugin等の変遷ついてlog
 また、同時に`Lazyvim`というフレームワークも試し中。
 設定がデフォルトで自分が必要な機能の大部分を網羅出来るのも良い。
 
-### skkeleton
+#### packer.nvim
+
+nvim初期に利用。
+
+#### plug.vim
+
+vim時代に利用。
+
+### Utils
+
+#### skkeleton
 
 日本語入力をskkに統一するため、skkeletonを導入。
 これまでIMEを切替えるために、`<Ctrl + Space>`と`<ESC>`をひたすら叩いてきたので、そのクセが抜けるまで時間がかかりそう。
 また現状の入力モードを把握するために`skkeleton_indicator`を導入
 
-## 2021
+## Editing
 
-### neovim
+### Keybinding
 
-- `vim` -> `neovim`
+#### leader key
 
-に移行、同時に設定ファイルを`lua`に移行
+`<Space>`をLeaderに設定、理由は英字キーボードだと最も叩きやすいから。
 
-### smart_quit
+#### smart_quit
+
+- 単一バッファは`<leader> bd`(buffer delete)で閉じる。
+- 複数ファイルを開いて編集していない時に`<leader> bd`は面倒なので、`smart_quit`を実装。
 
 ```lua
 --- smart quit
@@ -61,13 +76,3 @@ local smart_quit = function()
   end
 end
 ```
-
-## 2019
-
-### vim
-
-`vim`と出会う
-
-### leader key
-
-`<Space>`をLeaderに設定、理由は英字キーボードだと最も叩きやすいから。
