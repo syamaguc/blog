@@ -4,7 +4,7 @@ author: syamaguc
 pubDatetime: 2023-11-05T00:00:00Z
 postSlug: i-understand-bitcoin-completely
 featured: false
-draft: false
+draft: true
 tags:
   - btc
 description: ビットコイン完全に理解した

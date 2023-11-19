@@ -19,7 +19,23 @@ description: 随時更新 | Linux(主にArch Linux)についてのtips & memo
 
 ## Table of Contents
 
-## 便利tips
+## tool
+
+### Alacritty
+
+termialに表示されたURLを開く際にデフォルトで`private-mode`を利用する。
+
+```yml
+hints:
+  enabled:
+    - regex: "(https:|http:)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+      command: { program: "google-chrome-stable", args: ["--incognito"] }
+      post_processing: true
+      mouse:
+        enabled: true
+```
+
+## tips
 
 ### USB
 
