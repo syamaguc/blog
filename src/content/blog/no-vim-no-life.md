@@ -13,26 +13,6 @@ description: 随時更新 | vimの設定, tips, plugin等の変遷ついてlog
 
 ## Table of Contents
 
-## Overview
-
-### Edit
-
-| key            | action     | plugin | mode |
-| -------------- | ---------- | ------ | ---- |
-| leader \<ESC\> | smart_quit | myfunc | n    |
-
-### Move in file
-
-| key  | action | plugin | mode |
-| ---- | ------ | ------ | ---- |
-| hjkl |        |        | n    |
-
-### Move window, buffer
-
-| key       | action           | plugin    | mode |
-| --------- | ---------------- | --------- | ---- |
-| leader ff | find files (cwd) | telescope | n    |
-
 ## 2023
 
 ### lazy.nvim
@@ -48,8 +28,7 @@ description: 随時更新 | vimの設定, tips, plugin等の変遷ついてlog
 
 日本語入力をskkに統一するため、skkeletonを導入。
 これまでIMEを切替えるために、`<Ctrl + Space>`と`<ESC>`をひたすら叩いてきたので、そのクセが抜けるまで時間がかかりそう。
-
-lazyvimを採用
+また現状の入力モードを把握するために`skkeleton_indicator`を導入
 
 ## 2021
 

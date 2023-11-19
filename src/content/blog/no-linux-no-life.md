@@ -37,6 +37,41 @@ hints:
 
 ## tips
 
+### cron
+
+serverの`timezone`を変更した場合cronを再起動するのを忘れずに。
+
+```bash
+sudo timedatectl set-timezone Asia/Tokyo
+sudo systemctl restart cron
+```
+
+`format`は以下の通り。
+
+```bash
+# minute hour day_of_month month day_of_week command
+# minute は 0 から 59 までの値。
+# hour は 0 から 23 までの値。
+# day_of_month は 1 から 31 までの値。
+# month は 1 から 12 までの値。
+# day_of_week は 0 から 6 までの値、0 が日曜日。
+
+# ex) `myscript.sh`をsummer time (6月, 7月, 8月) を除く平日(月-金)の午前9時から午後4:55まで5分間隔で実行
+*/5 9-16 * 1-5,9-12 1-5 ~/bin/myscript.sh
+
+# @reboot : 起動時
+# @yearly : 一年毎
+# @annually ( == @yearly)
+# @monthly : 一月毎
+# @weekly : 一周毎
+# @daily : 一日毎
+# @midnight ( == @daily)
+# @hourly : 一時間毎
+
+@reboot ~/bin/myscript.sh
+
+```
+
 ### USB
 
 - [archlinux wiki - USB Storage Device](https://wiki.archlinux.jp/index.php/USB_%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9)
