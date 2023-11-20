@@ -76,3 +76,15 @@ local smart_quit = function()
   end
 end
 ```
+
+## Source
+
+参考にした記事など
+
+- [Seven habits of effective text editing by Bram Moolenaar](https://www.moolenaar.net/habits.html)
+- [Mastering the Vim Language by Chris Toomey](https://www.youtube.com/watch?si=ftR0wOchN5KdbL68&v=wlR5gYd6um0&feature=youtu.be)
+- [Practical Vim by Drew Neil](https://pragprog.com/titles/dnvim2/practical-vim-second-edition/)
+- [Your problem with Vim is that you dont't grok vi](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
+- [Vim Text Objects: The Definitive Guide by Jared Carroll](https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/)
+- [Vim Registers: Basic and Beyond](https://www.brianstorti.com/vim-registers/)
+- [Colder Quickfix Lists](https://vimways.org/2018/colder-quickfix-lists/)
