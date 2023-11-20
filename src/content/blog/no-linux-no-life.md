@@ -8,7 +8,8 @@ draft: false
 tags:
   - dev
   - linux
-description: 随時更新 | Linux(主にArch Linux)についてのtips & memo
+  - mac
+description: 随時更新 | 自分の開発環境についてのwiki
 ---
 
 <div align="center">
@@ -19,9 +20,50 @@ description: 随時更新 | Linux(主にArch Linux)についてのtips & memo
 
 ## Table of Contents
 
+## Overview
+
+|          | Arch Linux<br>@Desktop | M1 MacOs<br>@Desktop | Arch Linux<br>@Thinkpad | Ubuntu<br>@EC2    | Windows11<br>@Desktop |
+| -------- | ---------------------- | -------------------- | ----------------------- | ----------------- | --------------------- |
+| 用途     | 自宅                   | オフィス             | 外出時                  | cron, 緊急時, etc | 確定申告とゲーム      |
+| Termnal  | Alacrity<br> + tmux    | =                    | =                       |                   |                       |
+| WDM      | i3                     | Yabai                | i3                      |                   |                       |
+| Editor   | Neovim                 | =                    | =                       | vim               |                       |
+| Shell    | ZSH                    | =                    | =                       | =                 |                       |
+| Launcher | rofi                   | Alfread              | rofi                    |                   |                       |
+| Storage  | Dropbox                | =                    | =                       |                   |                       |
+
+- [my dotfiles](https://github.com/syamaguc/config)
+
+```makefile
+COMMON = git zsh vim
+LOCAL_COMMON = lazygit nvim tmux alacritty bin
+LINUX = x i3 i3blocks picom rofi conky libskk ranger dunst
+MAC_OS = yabai skhd
+
+archlinux: local
+	@stow -v $(LINUX)
+
+mac: local
+	@stow -v $(MAC_OS)
+
+# local common setup
+local: server
+	@stow -v $(LOCAL_COMMON)
+
+# for server minimal setup, ec2, gce, etc
+server:
+	@stow -v $(COMMON)
+
+
+clean:
+	@stow -Dv */
+```
+
 ## tool
 
-### Alacritty
+### Terminal
+
+#### Alacritty
 
 termialに表示されたURLを開く際にデフォルトで`private-mode`を利用する。
 
@@ -34,6 +76,106 @@ hints:
       mouse:
         enabled: true
 ```
+
+#### tmux
+
+sessionやwindow間の移動は基本的に全て`choose-tree`を使うことで、余計なキーバインドを覚えなくて済むし混乱しない。
+
+自分の場合は`<C-a> <Space>`に割り当てている。
+
+| key                    | action            |
+| ---------------------- | ----------------- |
+| \<C-a\> + \<space\>    | choose-tree       |
+| \<C-a\> + :            | command line mode |
+| \<C-a\> + l            | next window       |
+| \<C-a\> + \<c-[hjkl]\> | move pane [hjkl]  |
+| \<C-a\> + ,            | rename window     |
+| tls                    | tmux ls           |
+| ta                     | tmux attach       |
+| tkill                  | tmux kill         |
+| tnew                   | tmux new-session  |
+
+### WDM
+
+#### i3 & Yabai
+
+| key                      | i3<br>@archlinux                     | Yabai<br>@MacOS |
+| ------------------------ | ------------------------------------ | --------------- |
+| SUPER-L + [1-9]          | move workspace [1-9]                 | =               |
+| SUPER-L + shift + [1-9]  | move focus-window to workspace [1-9] | =               |
+| SUPER-L + [hjkl]         | move focus to [hjkl]                 | =               |
+| SUPER-L + shift + [hjkl] | swap focus-window to [hjkl]          | =               |
+| SUPER-L + shift + r      | reload WDM                           | =               |
+| SUPER-L + shift + d      | quit focus-window                    | ???             |
+| ALT + \<space\>          | launch rofi                          | launch Alfread  |
+| ALT + shift + \<space\>  | search window with rofi              | ???             |
+| ALT + shift + q          | system menue with rofi               | ???             |
+| SUPER-L + p              | screenshot with scrot                | ???             |
+| SUPER-L + shift + p      | screenshot with gyazo                | ???             |
+
+自宅と職場で別のOSを使っていることもあり、
+
+出来るだけ開発環境を統一すべく試行錯誤した。
+
+極力マウスを使いたくない自分としては、
+
+Macでのタイル型ウィンドウマネージャがずっと定まらなくて困っていたが、
+
+やっとYabaiが安定してきたので、本格的に導入した。
+
+いまのところ、自宅でもオフィスでもストレス無く開発出来ている。
+
+[![Image from Gyazo](https://i.gyazo.com/7e96b3ea3ed5465813d67dc784b6a908.png)](https://gyazo.com/7e96b3ea3ed5465813d67dc784b6a908)
+
+### Browser
+
+#### Chrome
+
+新しいタブを開くと、デフォルトの設定だとVomnibarの操作が効かなくなるのが不便だったので
+
+[NewTabページ](https://syamaguc.vercel.app/)を作って新規タブの遷移先を変えた。
+
+あとThemeを[Frappe](https://github.com/catppuccin/vimium/blob/main/dist/catppuccin-vimium-frappe.css)にしたら、
+
+ChromeのThemeが[Dracula Chrome Theme](https://draculatheme.com/chrome)なので、色合いがちょうど良い。
+
+[![Image from Gyazo](https://i.gyazo.com/271f68b392d3a8c873c3f6c7ca7da2cd.png)](https://gyazo.com/271f68b392d3a8c873c3f6c7ca7da2cd)
+
+<br>
+
+[![Image from Gyazo](https://i.gyazo.com/2244051648ec352150e0cfa1a31ed2c9.png)](https://gyazo.com/2244051648ec352150e0cfa1a31ed2c9)
+
+```text
+##### re map keybind #####
+
+# go & back
+map H goBack
+map L goForward
+map <c-h> goBack
+map <c-l> goForward
+
+# new tab action
+map t Vomnibar.activateTabSelection
+map T createTab
+
+# move tab
+map [ previousTab
+map ] nextTab
+
+# moving
+map J scrollFullPageDown
+map K scrollFullPageUp
+map <c-j> scrollFullPageDown
+map <c-k> scrollFullPageUp
+map h scrollLeft
+map l scrollRight
+```
+
+### Other
+
+#### Gyazo
+
+Screenshotは`gyzo`でクラウドに保存する
 
 ## tips
 
