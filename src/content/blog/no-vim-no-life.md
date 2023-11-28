@@ -26,12 +26,6 @@ description: 随時更新 | vim, nivmについてのmemo,tips, plugin, etc
 また、同時に`Lazyvim`というフレームワークも試し中。
 設定がデフォルトで自分が必要な機能の大部分を網羅出来るのも良い。
 
-#### packer.nvim
-
-nvim初期に利用。
-
-#### plug.vim
-
 vim時代に利用。
 
 ### Utils

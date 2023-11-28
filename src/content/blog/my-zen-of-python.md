@@ -45,9 +45,9 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 ```
 
-## Package管理
+## PJ, Packageの管理
 
-基本的な方針としては、
+方針としては、
 
 1. pythonのバージョン管理は`pyenv`
 1. packageの管理は
@@ -107,13 +107,13 @@ from pathlib import Path
 from collections import namedtuple
 import requests
 import random
-from hashlib import sha224
+from hashlib import sha256
 
 Path("db").mkdir(exist_ok=True)
-Datum = namedtuple("Datum", ["depth", "domain", "html", "links"])
+Page = namedtuple("Page", ["links", "html"])
 
 def get_digest(url):
-    return sha224(bytes(url, "utf8")).hexdigest()[:24]
+    return sha256(bytes(url, "utf8")).hexdigest()[:24]
 
 
 def flash(url, datum):
@@ -137,7 +137,6 @@ if __name__ == "__main__":
       dummy_url = random.choice(dummy_urls)
       if isExists(dummy_url) is True:
           continue
-      depth = 1
       dummy_html = """
       <html>
         <body>
@@ -147,15 +146,14 @@ if __name__ == "__main__":
         </body>
       </html>
       """
-      dummy_domain = "example.com"
-      dummy_links = [f"{dummy_domain}/hoge", f"{dummy_domain}/fuga"]
-      datum = Datum(depth=depth, domain=dummy_domain, html=dummy_html, links=dummy_links)
-      flash(dummy_url, datum)
+      dummy_links = [f"{dummy_url}/hoge", f"{dummy_url}/fuga"]
+      page = Datum(html=dummy_html, links=dummy_links)
+      flash(dummy_url, page)
 ```
 
 ## PYPI
 
-#### tor
+### tor
 
 - スクレイピング時のIPアドレス秘匿
 
@@ -164,10 +162,9 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-#NOTE: いまいち`socks5`と`socks5h`の違いがわからない、調べる
 
 def setup_driver():
-    """ """
+    #NOTE: いまいちsocks5とsocks5hの違いがわかっていないので調べる
     PROXY = "socks5://localhost:9050"
     options = Options()
     options.add_argument("--headless")
@@ -200,15 +197,15 @@ def check_tor_selenium():
 
     title = driver.title.lower()
     if "congratulations" in title:
-        print(title)
         return True
     else:
-        print(title)
         return False
 
 
 if __name__ == "__main__":
-    check_tor_requests()
-    check_tor_selenium()
+    if check_tor_requests():
+      print("tor is running with requests")
+    if check_tor_selenium():
+      print("tor is running with selenium")
 
 ```

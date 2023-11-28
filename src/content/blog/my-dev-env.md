@@ -13,17 +13,21 @@ tags:
 description: 随時更新 | 自分の開発環境についてのwiki
 ---
 
+## Table of Contents
+
+<!-- toc -->
+
 ## Overview
 
-|          | Arch Linux<br>@Desktop | Arch Linux<br>@Thinkpad | Ubuntu<br>@EC2    | M1 MacOS<br>desktop  | Windows11<br>@Desktop |
-| -------- | ---------------------- | ----------------------- | ----------------- | -------------------- | --------------------- |
-| 用途     | 自宅                   | 外出時                  | 緊急時,batch, etc | オフィス             | 確定申告とゲーム      |
-| Termnal  | Alacrity<br> + tmux    | =                       |                   | Alacritty<br> + tmux |                       |
-| WDM      | i3                     | i3                      |                   | yabai                |                       |
-| Editor   | Neovim                 | =                       | vim               | Neovim               |                       |
-| Shell    | ZSH                    | =                       | =                 | ZSH                  |                       |
-| Launcher | rofi                   | rofi                    |                   | alfread              |                       |
-| Storage  | Dropbox                | =                       |                   | Dropbox              |                       |
+|          | Arch Linux<br>@Desktop | Arch Linux<br>@Thinkpad | Ubuntu<br>@EC2 | M1 MacOS<br>desktop  | Windows11<br>@Desktop |
+| -------- | ---------------------- | ----------------------- | -------------- | -------------------- | --------------------- |
+| 用途     | 自宅                   | 外出時                  |                | オフィス             | 確定申告とゲーム      |
+| Termnal  | Alacritty<br> + tmux   | Alacritty<br> + tmux    |                | Alacritty<br> + tmux |                       |
+| WDM      | i3                     | i3                      |                | yabai                |                       |
+| Editor   | Neovim                 | Neovim                  | vim            | Neovim               |                       |
+| Shell    | ZSH                    | ZSH                     | ZSH            | ZSH                  |                       |
+| Launcher | rofi                   | rofi                    |                | alfread              |                       |
+| Storage  | Dropbox                | Dropbox                 |                | Dropbox              |                       |
 
 ## Setup
 
@@ -155,5 +159,3 @@ map l scrollRight
 ##### Gyazo
 
 基本画像やScreenshotは`gyzo`でクラウドに保存する
-
-## memo

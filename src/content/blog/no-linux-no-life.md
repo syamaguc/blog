@@ -34,10 +34,6 @@ sudo systemctl restart cron
 # day_of_month は 1 から 31 までの値。
 # month は 1 から 12 までの値。
 # day_of_week は 0 から 6 までの値、0 が日曜日。
-
-# ex) `myscript.sh`をsummer time (6月, 7月, 8月) を除く平日(月-金)の午前9時から午後4:55まで5分間隔で実行
-*/5 9-16 * 1-5,9-12 1-5 ~/bin/myscript.sh
-
 # @reboot : 起動時
 # @yearly : 一年毎
 # @annually ( == @yearly)
@@ -47,6 +43,10 @@ sudo systemctl restart cron
 # @midnight ( == @daily)
 # @hourly : 一時間毎
 
+# `myscript.sh`をsummer time (6月, 7月, 8月) を除く平日(月-金)の午前9時から午後4:55まで5分間隔で実行
+*/5 9-16 * 1-5,9-12 1-5 ~/bin/myscript.sh
+
+#  `myscript.sh`を起動時に実行
 @reboot ~/bin/myscript.sh
 
 ```
