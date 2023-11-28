@@ -8,7 +8,7 @@ draft: false
 tags:
   - dev
   - vim
-description: 随時更新 | vimの設定, tips, plugin等の変遷ついてlog
+description: 随時更新 | vim, nivmについてのmemo,tips, plugin, etc
 ---
 
 ## Table of Contents
@@ -42,44 +42,9 @@ vim時代に利用。
 これまでIMEを切替えるために、`<Ctrl + Space>`と`<ESC>`をひたすら叩いてきたので、そのクセが抜けるまで時間がかかりそう。
 また現状の入力モードを把握するために`skkeleton_indicator`を導入
 
-## Editing
-
-### Keybinding
-
-#### leader key
-
-`<Space>`をLeaderに設定、理由は英字キーボードだと最も叩きやすいから。
-
-#### smart_quit
-
-- 単一バッファは`<leader> bd`(buffer delete)で閉じる。
-- 複数ファイルを開いて編集していない時に`<leader> bd`は面倒なので、`smart_quit`を実装。
-
-```lua
---- smart quit
-local smart_quit = function()
-  local bufnr = vim.api.nvim_get_current_buf()
-  local modified = vim.api.nvim_buf_get_option(bufnr, "modified")
-  if modified then
-    vim.ui.input({
-      prompt = "You have unsaved changes.(w/q) ",
-    }, function(input)
-      if input == "w" then
-        vim.cmd("w")
-        vim.cmd("q")
-      elseif input == "q" then
-        vim.cmd("q!")
-      end
-    end)
-  else
-    vim.cmd("q!")
-  end
-end
-```
-
 ## Source
 
-参考にした記事など
+過去参考にした記事など
 
 - [Seven habits of effective text editing by Bram Moolenaar](https://www.moolenaar.net/habits.html)
 - [Mastering the Vim Language by Chris Toomey](https://www.youtube.com/watch?si=ftR0wOchN5KdbL68&v=wlR5gYd6um0&feature=youtu.be)

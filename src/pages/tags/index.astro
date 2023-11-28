@@ -7,8 +7,6 @@ import Main from "@layouts/Main.astro";
 import Tag from "@components/Tag.astro";
 import getUniqueTags from "@utils/getUniqueTags";
 import { SITE } from "@config";
-import { Image } from 'astro:assets';
-import LIMG from '@assets/images/lycoris-recoil.png';
 
 
 const posts = await getCollection("blog");
@@ -22,8 +20,6 @@ let tags = getUniqueTags(posts);
     <ul>
       {tags.map(tag => <Tag name={tag} size="lg" />)}
     </ul>
-    <br>
-    <Image src={LIMG} alt="lycoris-recoil" width='450' height='450'/>
   </Main>
   <Footer />
 </Layout>

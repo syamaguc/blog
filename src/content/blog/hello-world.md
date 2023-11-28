@@ -1,12 +1,13 @@
 ---
 title: Hello World
 author: syamaguc
-pubDatetime: 2023-01-11T00:05:00Z
+pubDatetime: 2022-01-11T00:05:00Z
 postSlug: hello-world
 featured: false
 draft: false
 tags:
   - poem
+  - anime
 description: 一度あった事は忘れないものさ、思い出せないだけで。
 ---
 
