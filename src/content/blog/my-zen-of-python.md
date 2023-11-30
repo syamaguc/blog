@@ -4,7 +4,7 @@ author: syamaguc
 pubDatetime: 2021-11-05T00:00:00Z
 postSlug: my-zen-of-python
 featured: true
-draft: false
+draft: true
 tags:
   - dev
   - python

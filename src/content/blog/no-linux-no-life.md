@@ -4,7 +4,7 @@ author: syamaguc
 pubDatetime: 2022-5-11T00:00:00Z
 postSlug: no-linux-no-life
 featured: true
-draft: false
+draft: true
 tags:
   - dev
   - linux

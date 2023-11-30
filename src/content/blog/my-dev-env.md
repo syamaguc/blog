@@ -4,7 +4,7 @@ author: syamaguc
 pubDatetime: 2022-5-11T00:00:00Z
 postSlug: my-dev-env
 featured: true
-draft: false
+draft: true
 tags:
   - dev
   - linux
