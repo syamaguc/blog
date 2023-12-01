@@ -8,11 +8,8 @@ title: "About"
 </div>
 <br>
 <div align="center">
-  <!-- <a href="https://i.gyazo.com/effd99f32e448fc5514ed7c58e64c2d2.gif"> -->
-  <!--   <img src="https://i.gyazo.com/effd99f32e448fc5514ed7c58e64c2d2.gif" alt="Image from Gyazo" width="500"/> -->
-  <!-- </a> -->
-  <a href="https://i.gyazo.com/82720bdd6383b5495c610d71c241244a">
-    <img src="https://i.gyazo.com/82720bdd6383b5495c610d71c241244a.png" alt="Image from Gyazo" width="350"/>
+  <a href="https://imgur.com/rHG1drB">
+    <img src="https://i.imgur.com/rHG1drB.jpg" title="source: imgur.com" width="50%" height="50%" />
   </a>
   <blockquote>
     <p>
