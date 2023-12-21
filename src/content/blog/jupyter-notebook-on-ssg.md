@@ -4,7 +4,7 @@ author: syamaguc
 pubDatetime: 2023-11-01T00:00:00Z
 postSlug: jupyter-notebook-on-ssg
 featured: false
-draft: false
+draft: true
 tags:
   - dev
   - python

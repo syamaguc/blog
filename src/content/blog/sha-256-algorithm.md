@@ -330,5 +330,3 @@ int main(void){
 1dbf03acce51637e1a7619ec87668ff718d7b53cba8d58225dbfca825c4d7f16
 
 ```
-
-間違っても`unko puripuri`なんて秘密鍵を使わないでw

@@ -4,7 +4,7 @@ author: syamaguc
 pubDatetime: 2021-11-05T11:05:00Z
 postSlug: memorandum
 featured: true
-draft: false
+draft: true
 tags:
   - dev
 description: 随時更新 | 自分用の備忘録
