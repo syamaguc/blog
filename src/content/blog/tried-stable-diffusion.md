@@ -4,13 +4,13 @@ author: syamaguc
 pubDatetime: 2023-11-27T03:00:00Z
 postSlug: tried-stable-diffusion
 featured: false
-draft: false
+draft: true
 tags:
   - dev
   - ai
   - stablediffusion
   - aiart
-description: AUTOMATIC1111/Stable-Diffusion-webUI 試してみたのでメモ
+description: AUTOMATIC1111/Stable-Diffusion-webUIで遊んでみた。
 ---
 
 ## Table of Contents
