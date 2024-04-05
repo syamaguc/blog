@@ -5,12 +5,16 @@ export const SITE: Site = {
   author: "syamaguc",
   desc: "The appearance of a child, the intellect of a child. Miracle cute programmer & data scientist.",
   title: "APTX4869",
-  ogImage: "dalle3-og.png",
+  ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 5,
+  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = {
+  lang: "en", // html lang code. Set this empty and default will be "en"
+  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+} as const;
 
 export const LOGO_IMAGE = {
   enable: false,
@@ -48,6 +52,12 @@ export const SOCIALS: SocialObjects = [
     name: "Pinterest",
     href: "https://www.pinterest.jp/syamaguc",
     linkTitle: `${SITE.title} on Pinterest`,
+    active: true,
+  },
+  {
+    name: "Discord",
+    href: "https://twitter.com/syamaguc",
+    linkTitle: `${SITE.title} on Discord`,
     active: true,
   },
   {
@@ -108,12 +118,6 @@ export const SOCIALS: SocialObjects = [
     name: "CodePen",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on CodePen`,
-    active: false,
-  },
-  {
-    name: "Discord",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Discord`,
     active: false,
   },
   {
