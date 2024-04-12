@@ -11,9 +11,10 @@ tags:
 description: No mouse, good life
 ---
 
-Linux, Mac OS, Windowsの三刀流で生きていくには、開発環境やキーバインドを統一することが必須である。
+Linux, Mac OS, Windowsの異なる環境で出来るだけキーボードのみで操作を完結できるような試行錯誤の記録
 
-出来るだけキーボードのみで操作を完結できるような試行錯誤の記録
+1. 必要なツールをインストール
+1. [設定ファイル](https://github.com/syamaguc/config)を`stow`でシンボリックリンクを貼れば環境構築が完了する。
 
 |          | Ubuntu           | Mac              | Windows          | WSL2 |
 | -------- | ---------------- | ---------------- | ---------------- | ---- |
@@ -30,8 +31,8 @@ Linux, Mac OS, Windowsの三刀流で生きていくには、開発環境やキ�
 
 ## Mac
 
-最近yabaiが安定してきたので感謝
+最近yabaiが安定してきた。
 
 ## Windows
 
-`確定申告`と`TARGET frontier JV`のためだけにあるOSなので、そこまで頑張って環境構築する必要はない。劣後
+`確定申告`と`TARGET frontier JV`のためだけにあるOSなので、そこまで頑張って環境構築する必要はない。優先順位は低い。
