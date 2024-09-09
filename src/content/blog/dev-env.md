@@ -1,22 +1,30 @@
 ---
-title: 開発環境の整理
+title: Arch Linuxを使う
 author: syamaguc
 pubDatetime: 2022-04-01T00:00:00Z
-modDatetime:
+modDatetime: 2024-07-07T00:00:00Z
 postSlug: dev-env
 featured: false
 draft: false
 tags:
   - dev
-description: No mouse, good life
+description: 軽量、シンプル、ミニマル。不要なもの、余計なものは入れない。
 ---
+
+## はじめに
 
 Linux, Mac OS, Windowsの異なる環境で出来るだけキーボードのみで操作を完結できるような試行錯誤の記録
 
-1. 必要なツールをインストール
+1. 必要なツールをインストール(`make install`)
 1. [設定ファイル](https://github.com/syamaguc/config)を`stow`でシンボリックリンクを貼れば環境構築が完了する。
 
-|          | Ubuntu           | Mac              | Windows          | WSL2 |
+という理想状態を目指している。
+
+Makefileを使って、環境のセットアップスクリプトを構築している人は意外と見ないが、依存関係の解決が楽なので親和性が高いと思っている。(Aをインストールしていないと、Bをインストール出来ない等)
+
+## ツール選定
+
+|          | Arch Linux       | Mac              | Windows          | WSL2 |
 | -------- | ---------------- | ---------------- | ---------------- | ---- |
 | IME      | ibus-skk         | Aqua-SKK         | CorvusSKK        |      |
 | WM       | i3               | yabai            |                  |      |
@@ -25,14 +33,16 @@ Linux, Mac OS, Windowsの異なる環境で出来るだけキーボードのみ�
 | Shell    | zsh              | zsh              |                  | zsh  |
 | Browser  | Firefox + Vimium | Firefox + Vimium | Firefox + Vimium |      |
 
-## Ubuntu
+## 各コメント(随時更新)
 
-現時点での最適解は、[Regolith](https://regolith-desktop.com/)をベースに色々とカスタマイズするのが最も楽。
+### Arch Linux
 
-## Mac
+- 定期的なライブラリのアップデートを怠ると、keyringの問題が発生する。`sudo pacman -Sy archlinux-keyring`で解決する。(2023/03/05)
 
-最近yabaiが安定してきた。
+### Mac
 
-## Windows
+- 最近yabaiが安定してきた(2023/12/15)
 
-`確定申告`と`TARGET frontier JV`のためだけにあるOSなので、そこまで頑張って環境構築する必要はない。優先順位は低い。
+### Windows
+
+- タイル型WMを導入したいが、`確定申告`と`TARGET frontier JV`のためだけにあるOSなので優先度低い。
