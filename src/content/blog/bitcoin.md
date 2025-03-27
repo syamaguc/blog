@@ -1,8 +1,8 @@
 ---
 title: Grateful Bitcoin
 author: syamaguc
-pubDatetime: 2022-09-14T00:05:00Z
-modDatetime: 2022-09-14T00:05:00Z
+pubDatetime: 2025-01-01T00:05:00Z
+modDatetime: 2025-01-01T00:05:00Z
 postSlug: grateful-bitcoin
 featured: false
 draft: false
