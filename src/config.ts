@@ -1,19 +1,27 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://syamaguc.dev", // replace this with your deployed domain
+  website: "https://syamaguc.dev/", // replace this with your deployed domain
   author: "syamaguc",
-  desc: "The appearance of a child, the intellect of a child. Miracle cute programmer.",
+  profile: "https://syamaguc.dev/",
+  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "APTX4869",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "bitcoin-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 5,
+  postPerIndex: 4,
+  postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+  showArchives: true,
+  editPost: {
+    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+    text: "Suggest Changes",
+    appendFilePath: true,
+  },
 };
 
 export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+  lang: "ja", // html lang code. Set this empty and default will be "en"
+  langTag: ["ja", "jp-JP", "en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
 export const LOGO_IMAGE = {
@@ -26,38 +34,8 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/syamaguc",
+    href: "https://github.com/satnaing/astro-paper",
     linkTitle: ` ${SITE.title} on Github`,
-    active: true,
-  },
-  {
-    name: "GitLab",
-    href: "https://gitlab.com/syamaguc",
-    linkTitle: `${SITE.title} on GitLab`,
-    active: true,
-  },
-  {
-    name: "Reddit",
-    href: "https://www.reddit.com/user/syamaguc",
-    linkTitle: `${SITE.title} on Reddit`,
-    active: true,
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/syamaguc",
-    linkTitle: `${SITE.title} on Twitter`,
-    active: true,
-  },
-  {
-    name: "Pinterest",
-    href: "https://www.pinterest.jp/syamaguc",
-    linkTitle: `${SITE.title} on Pinterest`,
-    active: true,
-  },
-  {
-    name: "Discord",
-    href: "https://twitter.com/syamaguc",
-    linkTitle: `${SITE.title} on Discord`,
     active: true,
   },
   {
@@ -85,6 +63,12 @@ export const SOCIALS: SocialObjects = [
     active: false,
   },
   {
+    name: "X",
+    href: "https://x.com/syamaguc",
+    linkTitle: `${SITE.title} on X`,
+    active: true,
+  },
+  {
     name: "Twitch",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Twitch`,
@@ -109,6 +93,12 @@ export const SOCIALS: SocialObjects = [
     active: false,
   },
   {
+    name: "Pinterest",
+    href: "https://github.com/satnaing/astro-paper",
+    linkTitle: `${SITE.title} on Pinterest`,
+    active: false,
+  },
+  {
     name: "TikTok",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on TikTok`,
@@ -118,6 +108,24 @@ export const SOCIALS: SocialObjects = [
     name: "CodePen",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on CodePen`,
+    active: false,
+  },
+  {
+    name: "Discord",
+    href: "https://github.com/satnaing/astro-paper",
+    linkTitle: `${SITE.title} on Discord`,
+    active: false,
+  },
+  {
+    name: "GitLab",
+    href: "https://github.com/satnaing/astro-paper",
+    linkTitle: `${SITE.title} on GitLab`,
+    active: false,
+  },
+  {
+    name: "Reddit",
+    href: "https://github.com/satnaing/astro-paper",
+    linkTitle: `${SITE.title} on Reddit`,
     active: false,
   },
   {

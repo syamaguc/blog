@@ -23,7 +23,7 @@ export default function SearchBar({ searchList }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputVal, setInputVal] = useState("");
   const [searchResults, setSearchResults] = useState<SearchResult[] | null>(
-    null,
+    null
   );
 
   const handleChange = (e: FormEvent<HTMLInputElement>) => {
@@ -38,7 +38,7 @@ export default function SearchBar({ searchList }: Props) {
         minMatchCharLength: 2,
         threshold: 0.5,
       }),
-    [searchList],
+    [searchList]
   );
 
   useEffect(() => {
@@ -70,6 +70,13 @@ export default function SearchBar({ searchList }: Props) {
       history.replaceState(history.state, "", newRelativePathQuery);
     } else {
       history.replaceState(history.state, "", window.location.pathname);
+    }
+  }, [inputVal]);
+
+  useEffect(() => {
+    // focus on text input when search bar is displayed
+    if (inputRef.current) {
+      inputRef.current.focus();
     }
   }, [inputVal]);
 

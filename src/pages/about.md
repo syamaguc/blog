@@ -15,25 +15,10 @@ title: "About"
   </p>
 </div>
 
-<details>
-  <summary> 🔑 Personality</summary>
-
-- 🏛️ [INTJ-A](https://www.16personalities.com/intj-personality)
-- 💰 [Bitcoin Maximalist](https://www.reddit.com/r/Bitcoin/comments/car30w/if_you_dont_believe_me_or_dont_get_it_i_dont_have)
-
-</details>
-
-<br/>
-
-<details>
-  <summary> ⌨️ Dev Env</summary>
-
-- OS:
+- Software Engineer
   - Archlinux with i3
-  - MacOS with Yabai
-- Edit:
   - Neovim + HHKB
-- Terminal:
   - Alacritty + tmux + ZSH
-
-</details>
+- 💰 [Bitcoin Maximalist](https://www.reddit.com/r/Bitcoin/comments/car30w/if_you_dont_believe_me_or_dont_get_it_i_dont_have)
+- 🏛️ [INTJ-A](https://www.16personalities.com/intj-personality)
+- Horse Racing
