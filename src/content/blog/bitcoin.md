@@ -1,9 +1,9 @@
 ---
-title: ₿
+title: Grateful Bitcoin
 author: syamaguc
 pubDatetime: 2022-09-14T00:05:00Z
 modDatetime: 2022-09-14T00:05:00Z
-postSlug: Grateful Bitcoin
+postSlug: grateful-bitcoin
 featured: false
 draft: false
 tags:
