@@ -21,5 +21,3 @@ title: "About"
   - Alacritty + tmux + ZSH
 - 💰 [Bitcoin Maximalist](https://www.reddit.com/r/Bitcoin/comments/car30w/if_you_dont_believe_me_or_dont_get_it_i_dont_have)
 - 🏛️ [INTJ-A](https://www.16personalities.com/intj-personality)
-- 趣味
-  - 競馬([ブログ](https://syamaguc.github.io/unicorn/content/intro.html))
