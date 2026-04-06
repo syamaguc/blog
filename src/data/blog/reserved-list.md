@@ -48,32 +48,33 @@ MTGの初期セットの各レアが何枚印刷されたか、
 
 上記は海外で有名な推定数だが、あくまで推定のため真偽は分からない。
 
-各エキスパンションのトップレアのPSA POPを調べると以下のようになる。
+各エキスパンションのトップレアのPSA/BGS POPを調べると以下のようになる。
 (比較対象になりそうな高額カードのみ抽出)
 
-| セット           | 推定供給枚数 | トップレア                      | POP |
-| ---------------- | ------------ | ------------------------------- | --- |
-| Alpha　          | 1100         | Black Lotus                     | 109 |
-| Beta　           | 3200         | Black Lotus                     | 184 |
-| Unlimited　      | 18500        | Black Lotus                     | 334 |
-| Revised　        | 289000       | Underground Sea                 | 676 |
-| Legends　        | 19500        | The Tabernacle at Pendrell Vale | 176 |
-| Arabian Nights　 | 20500        | Juzam Djinn                     | 269 |
-| Antiquities　    | 31000        | Mishra's Workshop               | 242 |
-| The Dark         | 128000       |                                 |     |
-| Fallen Empire    | 744000       |                                 |     |
-| Ice Age          | 202000       |                                 |     |
-| Homelands　      | 413000       |                                 |     |
-| Alliances　      | 326086       |                                 |     |
-| Mirage　         | 242424       | Lion's Eye Diamond              | 390 |
-| Visions　        | 240000       |                                 |     |
-| Wheatherlight　  | 240000       |                                 |     |
-| Tempest　        | 242424       |                                 |     |
-| Stronghold　     | 272727       | Mox Diamond                     | 575 |
-| Exodus　         | 272727       | City of Traitors                | 149 |
-| Urza's Saga　    | 363636       | Gaea's Cradle                   | 390 |
-| Urza's Legacy　  | 303030       |                                 |     |
-| Urza's Destiney  | 303030       |                                 |     |
+| セット           | 推定供給枚数 | トップレア                      | PSA POP | BGS POP |
+| ---------------- | ------------ | ------------------------------- | ------- | ------- |
+| Alpha　          | 1100         | Black Lotus                     | 109     | 287     |
+| Beta　           | 3200         | Black Lotus                     | 184     | 418     |
+| Unlimited　      | 18500        | Black Lotus                     | 334     | 831     |
+| Revised　        | 289000       | Underground Sea                 | 676     | 1312    |
+| Legends　        | 19500        | The Tabernacle at Pendrell Vale | 176     | 641     |
+| Arabian Nights　 | 20500        | Juzam Djinn                     | 269     |         |
+| Antiquities　    | 31000        | Mishra's Workshop               | 242     |         |
+| The Dark         | 128000       |                                 |         |         |
+| Fallen Empire    | 744000       |                                 |         |         |
+| Ice Age          | 202000       |                                 |         |         |
+| Homelands　      | 413000       |                                 |         |         |
+| Alliances　      | 326086       |                                 |         |         |
+| Mirage　         | 242424       | Lion's Eye Diamond              | 390     |         |
+| Visions　        | 240000       |                                 |         |         |
+| Wheatherlight　  | 240000       |                                 |         |         |
+| Tempest　        | 242424       |                                 |         |         |
+| Stronghold　     | 272727       | Mox Diamond                     | 575     |         |
+| Exodus　         | 272727       | City of Traitors                | 149     |         |
+| Urza's Saga　    | 363636       | Gaea's Cradle                   | 390     | 536     |
+| Urza's Legacy　  | 303030       |                                 |         |         |
+| Urza's Destiney  | 303030       |                                 |         |         |
+|                  |
 
 カードの格によって、PSAの提出率も違うのでこれも手がかりの一端でしかないが、
 alpha～unlimitedくらいまではみんな同様の率で出すだろうと考えると、
