@@ -8,7 +8,7 @@ featured: false
 draft: false
 tags:
   - mtg
-description: mtg
+description: 再録禁止リストは、WotCが決して放棄しない信頼です。--- Donald Trump
 ---
 
 ## 序文
