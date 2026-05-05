@@ -1,9 +1,9 @@
 ---
-title: 遊戯王 旧アジア レリーフ
+title: 遊戯王のコレクション
 author: syamaguc
-pubDatetime: 2026-05-01T00:07:00Z
+pubDatetime: 2023-05-01T00:07:00Z
 modDatetime: 2026-05-01T00:07:00Z
-postSlug: yu-gi-oh-asian-english
+postSlug: yu-gi-oh-collection
 featured: false
 draft: false
 tags:
@@ -18,9 +18,9 @@ description: 次回 城之内 死す
 
 自分の世代にとって遊戯王といえば、ブルーアイズやBMG(ブラックマジシャンガール)が代表的であるが、最近とても貴重なカードを入手したのでそれについて書いていく。
 
-精霊術師ドリアード 旧アジア版 レリーフ PSA10
+## 精霊術師ドリアード 旧アジア版 レリーフ
 
-<img src="https://i.gyazo.com/51e487b88f573108176b4e870ce44da9.jpg" width="30%">
+<img src="https://i.gyazo.com/51e487b88f573108176b4e870ce44da9.jpg" width="50%">
 
 旧アジアレリーフはその出回りが極端に少ないこと、初期傷が多いことでも有名。
 
@@ -30,7 +30,9 @@ description: 次回 城之内 死す
 
 その旧アジアレリーフの中でも最も高額なカードが`THE LOST MILLENNIUM`に収録された`Elemental Mistress Doriado`、コレクターの中では有名なアイテムである。
 
-## 旧アジアレリーフPSA鑑定分布
+[2020年のきまぐれクックさんの動画](https://www.youtube.com/watch?v=ocVxvw4DKVE)でも登場するカードで、改めてすごいなと。
+
+### PSA鑑定分布
 
 |                                | 2022/07/19時点 | 2026/05/01時点 |
 | ------------------------------ | -------------- | -------------- |
@@ -44,8 +46,6 @@ description: 次回 城之内 死す
 | Elemental Mistress Doriado PSA10    | 4              | 15             |
 | Elemental Mistress Doriado PSA10 %  | 36%            | 34%            |
 
-え、世界に15枚しかないの、、、
-
 2026年年時点のカードショップの買取価格は、
 
 - PSA10: 150万
@@ -56,3 +56,14 @@ description: 次回 城之内 死す
 メルカリにPSA10の出品が1点だけあり、その価格は249.8万円
 
 、、、10年後が楽しみである。
+
+## 黒魔道師(Vジャンプ懸賞配布中国版)
+
+<img src="https://i.gyazo.com/6c01aa98977c2781822099049fc9c427.jpg" width="50%">
+
+2000年のジャンプの抽選応募で限定1000枚配布の超絶レアアイテム。
+
+|                                             | 2022/07/19時点 | 2026/05/01時点 |
+| ------------------------------------------- | -------------- | -------------- |
+| Dark Magician Weekly Shonen Jump 総鑑定枚数 | ???            | 59             |
+| Dark Magician Weekly Shonen Jump PSA10      | ???            | 9              |
